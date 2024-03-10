@@ -1,0 +1,71 @@
+/* first.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 600px) {
+  header {
+    font-size: 1.2em;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+}
+
+/* Exclude login popup from being affected by global styles */
+.popup {
+  background: transparent;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+}
